@@ -1,0 +1,373 @@
+body {
+    background-color: #0a0a0a;
+    height: 100vh;
+    width: 100vw;
+    background-image: radial-gradient(#212121,#0A0A0A);
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url('../fonts/Anton-Regular.ttf');
+    }
+
+#topText {
+    margin: 50px 0px 0px 55px;
+    animation-name: breathe;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transform-origin: left;
+}
+
+#bandName {
+    font-family: 'Anton';
+    font-size: 128px;
+    margin: 0px;
+    transition-duration: 0.3s;
+    position: absolute;
+}
+
+#bandName:hover {
+    /* box-shadow: 0px 4px 8px #CD5B2B; */
+    color: #389633;
+  }
+
+
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #DA602C;
+    border-radius: 50px;
+    margin-right: 60%;
+}
+
+.button {
+    transition-duration: 0.3s;
+  }
+  
+  .button:hover {
+    box-shadow: 0px 4px 8px #CD5B2B;
+    /* color: white; */
+  }
+
+
+#info{
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 4px;
+}
+
+#text {
+    width: 100%;
+    /* padding-left: 8rem; */
+    /* margin-left: 10%; */
+    /* margin-top: 200px; */
+    display: flex;
+    /* top: auto; */
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    z-index: -4;
+    /* transform: translateY(-50%); */
+}
+
+#date {
+    margin-right: 60%;
+    text-align: center;
+}
+
+#cr {
+    /* position: fixed;  */
+    bottom: 0; 
+    width:100%; 
+    text-align: center
+}
+
+#tvcontainer {
+    /* margin: 1px; */
+    /* padding: 400px; */
+    position: relative;
+    /* display: flex; */
+    /* width: 300px; */
+    /* left: 1px; */
+    /* top: 283px; */
+    /* bottom: 150px; */
+    /* height: 200px; */
+    /* width: 823px;
+    height: 556px; */
+    z-index: -3;
+}
+
+#tvcontent {
+    /* float: right;
+    margin-right: 20px;
+    margin-top: 110px; */
+
+    position: absolute;
+    /* float: right; */
+    /* margin-right: 20px; */
+    margin-top: 110px;
+    right: 20px;
+    /* margin-left: 457px; */
+    /* width: 100%; */
+    /* margin-left: 0%; */
+}
+
+
+#hsSVG {
+/* position:absolute; */
+width: 100%;
+/* height: 556px; */
+/* left: 625px; */
+/* top: 180px; */
+}
+
+#svgObj .bgButton {
+    fill: #373737;
+}
+
+#svgObj:hover .whiteButton {
+    cursor: pointer;
+}
+
+.knob {
+    transform-origin: center center;
+    transition: transform 0.1s ease;
+}
+
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/* 
+#svgObj #knob {
+    cursor: pointer;
+} */
+
+/* #svgObj .lines {
+    transform-origin: center;
+    transition: transform 0.5s ease-in-out;
+    animation: tick 3s infinite;
+} */
+
+/* #svgObj .whiteButton.rotate45 {
+    transform: rotate(45deg);
+} */
+
+g {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .lines {
+    transition: transform 0.5s ease-in-out;
+  }
+
+@keyframes tick {
+    0% {
+        transform: rotate(1deg);
+    }
+
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes breathe {
+    0% {transform: scale(1.0);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1.0);}
+}
+
+#svgObj:hover .lines {
+    cursor: pointer;
+}
+
+
+#svgObj #straight {
+    stroke-width: 3;
+}
+
+#svgObj:hover #audioButton {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'JosefinRegular';
+    src: url('JosefinSans-Regular.ttf');
+  }
+
+@font-face {
+font-family: 'JosefinMedium';
+src: url('JosefinSans-Medium.ttf');
+}
+
+
+
+
+a {
+color: #fff;
+text-decoration: none;
+font-size: 40px;
+font-family: 'JosefinMedium';
+}
+
+h1 p{
+    font-family: 'JosefinRegular';
+}
+
+#svgObj #squggle {
+visibility: hidden;
+}
+
+#handGrenade {
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+/* #svgObj #handGrenade {
+    cursor: pointer;
+    transform: translateY(300px);
+    opacity: 1;
+    transition: transform 1.5s ease-in-out;
+    z-index: 5;
+  
+  } */
+  
+  /* #svgObj:hover > #handGrenade {
+    opacity: .5;
+    animation: moveUp 1.5s ease-in-out;
+    transform: translateY(0);
+  } */
+
+/* #svgObj .lines {
+    x1="750.5" y1="305" x2="750.5" y2="318";
+} */
+
+
+@media screen and (max-width: 1250px){
+    #hsSVG {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 1111px){
+    #hsSVG {
+        width: 600px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 500px;
+        z-index: 1;
+    }
+
+    #cr {
+        margin-top: 0px;
+    }
+
+    #bandName{
+        font-size: 96px;
+        position: relative;
+        /* text-align: center; */
+    }
+
+    #topText {
+        text-align: center;
+        /* width: 50%; */
+        margin: auto;
+        padding-top: 55px;
+        transform-origin: center;
+    }
+
+    #tvcontent {
+        margin-top: 140px;
+        position: relative;
+        right: auto;
+    }
+
+    #text {
+        top: 22%;
+        z-index: 1;
+    }
+
+    .button {
+        font-size: 30px;
+        margin-right: initial;
+        padding: 10px 29px;
+    }
+
+    #info {
+        width: 30px;
+        height: 30px;
+    }
+
+    #date {
+        margin-right: initial;
+        font-size: 1.7em;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    #hsSVG {
+        width: 550px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #tvcontent {
+        position: relative;
+        right: auto;
+    }
+}
+
+@media screen and (max-width: 589px){
+    #hsSVG {
+        width: 500px;
+        height: 440px;
+    }
+
+    #tvcontent {
+        position: relative;
+        right: auto;
+    }
+}
+
+@media screen and (max-width: 530px){
+    #hsSVG {
+        width: 400px;
+        height: 350px;
+        margin-top: 80px;
+
+    }
+
+    #tvcontent {
+        position: relative;
+        right: auto;
+    }
+}
